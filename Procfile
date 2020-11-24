@@ -1,1 +1,1 @@
-web: gunicorn IRWOW.wsgi --log-file -
+web: gunicorn fawitch.wsgi --log-file -
