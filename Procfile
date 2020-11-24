@@ -1,0 +1,1 @@
+web: gunicorn IRWOW.wsgi --log-file -
