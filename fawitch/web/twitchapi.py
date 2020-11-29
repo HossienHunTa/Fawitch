@@ -1,8 +1,12 @@
-import operator
-from fawitch.settings import HEADERS
+import os, operator
 from collections import ChainMap
 from requests_futures import sessions
 
+HEADERS = {
+    'Accept' : 'application/vnd.twitchtv.v5+json',
+    'Client-ID': os.getenv('CLIENT_ID'),
+    'Authorization': 'Bearer ' + os.getenv('TOKEN'),
+}
 
 def get_channel_id(name: str) -> str:
     session = sessions.FuturesSession()

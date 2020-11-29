@@ -136,12 +136,6 @@ STATIC_ROOT = BASE_DIR / 'static'
 STATIC_URL = '/static/'
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-HEADERS = {
-    'Accept' : 'application/vnd.twitchtv.v5+json',
-    'Client-ID': os.getenv('CLIENT_ID'),
-    'Authorization': 'Bearer ' + os.getenv('TOKEN'),
-}
-
 # This should already be in your settings.py
 django_heroku.settings(locals())
 
