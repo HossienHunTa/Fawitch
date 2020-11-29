@@ -7,6 +7,6 @@ class ChannelModel(models.Model):
         ('0','برسی بیشتر'),
     )
     channel = models.CharField(unique=True,max_length=64,help_text='اسم کانال اسریمر را وارد کنید مثال : AmirPhanThom',)
-    show = models.CharField(choices=SHOW_CHOICES, max_length=5, default='0')
-    class Meta:
-        pass
+    show = models.CharField(choices=SHOW_CHOICES, max_length=1, default='0')
+
+

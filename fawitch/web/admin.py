@@ -3,4 +3,9 @@ from . import models
 # Register your models here.
 @admin.register(models.ChannelModel)
 class ChannelAdmin(admin.ModelAdmin):
-    pass
+    #template = 'panel.html'
+    list_display = ['channel','show']
+    list_filter = ['show']
+    ordering = ['-show','channel']
+    search_fields = ['channel']
+    
