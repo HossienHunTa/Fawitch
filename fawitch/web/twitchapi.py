@@ -1,10 +1,5 @@
 import operator
-
-try:
-    from fawitch.fawitch.settings import HEADERS
-except Exception:
-    from fawitch.settings import HEADERS
-
+from fawitch.fawitch.settings import HEADERS
 from collections import ChainMap
 from requests_futures import sessions
 

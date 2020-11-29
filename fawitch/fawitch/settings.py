@@ -11,9 +11,8 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 from pathlib import Path
-import os, dotenv, dj_database_url, django_heroku
-
 from django.contrib.messages import constants as messages
+import os, dotenv, dj_database_url, django_heroku
 
 
 MESSAGE_TAGS = {

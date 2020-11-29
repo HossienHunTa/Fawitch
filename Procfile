@@ -1,1 +1,1 @@
-web: gunicorn fawitch.wsgi --log-file -
+web: gunicorn fawitch.fawitch.wsgi --log-file -
