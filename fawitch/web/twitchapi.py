@@ -1,5 +1,5 @@
 import operator
-from fawitch.fawitch.settings import HEADERS
+from fawitch.settings import HEADERS
 from collections import ChainMap
 from requests_futures import sessions
 
